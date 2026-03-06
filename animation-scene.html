@@ -8,15 +8,26 @@
         <a-scene>
             <!-- Set the sky -->
             <a-sky color="blue"></a-sky>
-        <a-text id="score" value="0" position="0 2 -4" color="white" scale="10 10 10"
-                animation"
+        <a-text id="score" value="6" position="0 2 -4" color="white" scale="10 10 10"
+                animation="
                 property:position;
-                from:0 2 -4;
-                to:0 -2 -4;
+                from:0 1 -4;
+                to:0 -1 -4;
                 loop:true;
                 dura:2000;
                 dir:alternate;
-                
+                "
+        ></a-text>
+
+        <a-text id="score" value="7" position="2 2 -4" color="white" scale="10 10 10"
+                animation="
+                property:position;
+                from:2 -1 -4;
+                to:2 1 -4;
+                dura:2000;
+                loop:true;
+                dir:alternate;
+                "
         ></a-text>
 
         </a-scene>
