@@ -4,16 +4,24 @@
 
 <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
 <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script> 
-
+<script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@2.1.1/dist/aframe-extras.min.js"></script>
   </head>
     <body>
     <a-scene>
       <a-sky color="lightblue"></a-sky>
       
       <a-entity 
-      ply-model="src:"
-      position="0 0 -2"
-      rotation="0 0 0"
+      ply-model="src:doggy.ply"
+      position="-3.4 -2 -2"
+      rotation="270 90 360"
+      animation="
+      property:position;
+      from:-3.4 -2 -2;
+      to:3.4 2 -4;
+      dur:2000;
+      loop:true;
+      dir:alternate;
+      "
       ></a-entity>
                  
     </a-scene>
